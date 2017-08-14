@@ -24,7 +24,8 @@ namespace math_operations
             double divide(double operand1, double operand2){
                 if (operand2 == 0)
                 {
-                    return 1000000;
+                    Console.WriteLine("Can not divide by 0.");
+                    return 0;
                 }
                 else
                 {
