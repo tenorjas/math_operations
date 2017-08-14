@@ -9,11 +9,11 @@ namespace math_operations
             double number1;
             double number2;
 
-            double sum(double operand1, double operand2){
+            double add(double operand1, double operand2){
                 return operand1 + operand2;
             }
 
-            double difference(double operand1, double operand2){
+            double subtract(double operand1, double operand2){
                 return operand1 - operand2;
             }
 
@@ -32,9 +32,19 @@ namespace math_operations
                 }
             }
 
-            double remainder(double operand1, double operand2){
+            double modulo(double operand1, double operand2){
                 return operand1 % operand2;
             }
+
+            void showResults(double sum, double difference, double product, double quotient, double remainder){
+                Console.WriteLine($"The sum of the two numbers is {sum}.");
+                Console.WriteLine($"The difference of the two numbers is {difference}.");
+                Console.WriteLine($"The product of the two numbers is {product}.");
+                Console.WriteLine($"The quotient of the two numbers is {quotient}.");
+                Console.WriteLine($"When number 1 is divided by number 2, the remainder is {remainder}.");
+            }
+
+            
         }
     }
 }
