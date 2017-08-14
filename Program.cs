@@ -44,7 +44,12 @@ namespace math_operations
                 Console.WriteLine($"When number 1 is divided by number 2, the remainder is {remainder}.");
             }
 
-            
+            Console.WriteLine("Please enter Number 1: ");
+            number1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter Number 2:");
+            number2 = double.Parse(Console.ReadLine());
+
+            showResults(add(number1, number2), subtract(number1, number2), multiply(number1,number2), divide(number1,number2), modulo(number1,number2));
         }
     }
 }
